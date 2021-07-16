@@ -1,13 +1,13 @@
 --Doing some operation on lists with haskell
 
---Find the maximun element in a List 
+--Find the maximum element in a List 
 --e.g. maxi [1,2,-1,100,3,4] -> 100
 maxi :: [Int] -> Int
 maxi [] = 0
 maxi (x:xs) = foldl (\x acc -> if (x > acc) then x else acc) x (xs)
 
 
---Find the minimun element in a List 
+--Find the minimum element in a List 
 --e.g. mini [1,2,-1,100,3,4] -> -1
 mini :: [Int] -> Int
 mini [] = 0
