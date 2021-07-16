@@ -7,7 +7,7 @@ maxi [] = 0
 maxi (x:xs) = foldl (\x acc -> if (x > acc) then x else acc) x (xs)
 
 
---Find the maximun element in a List 
+--Find the minimun element in a List 
 --e.g. mini [1,2,-1,100,3,4] -> -1
 mini :: [Int] -> Int
 mini [] = 0
